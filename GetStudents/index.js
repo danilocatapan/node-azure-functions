@@ -6,6 +6,8 @@ module.exports = async function (context, req) {
   const res = await Students.find({});
   const body = await res.toArray();
 
+  closeConnectionFn();
+  
   context.res = {
     status: 200,
     body
