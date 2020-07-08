@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 const { MongoClient } = require('mongodb');
 const config = {
-  url: 'mongodb://localhost:27017/',
+  url: `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.9fezh.azure.mongodb.net/school?retryWrites=true&w=majority`,
   dbName: 'school'
 };
 
