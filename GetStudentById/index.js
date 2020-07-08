@@ -5,7 +5,7 @@ module.exports = async function (context, req) {
   const { id } = req.params;
 
   const { client: MongoClient, closeConnectionFn } = await createMongoClient();
-  const Students = MongoClient.collection('student');
+  const Students = MongoClient.collection('students');
   const res = await Students.findOne({ _id: ObjectID(id) });
 
   context.res = {
