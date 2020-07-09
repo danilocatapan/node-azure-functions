@@ -2,12 +2,14 @@
 	Crud functions using Node.js in Microsoft Azure.
 </h3>
 
-CreateStudent: [POST] http://localhost:7071/api/students
+Http Functions:
 
-DeleteStudent: [DELETE] http://localhost:7071/api/students/{id}
+        CreateStudent: [POST] http://localhost:7071/api/students
 
-GetStudentById: [GET] http://localhost:7071/api/students/{id}
+        DeleteStudent: [DELETE] http://localhost:7071/api/students/{id}
 
-GetStudents: [GET] http://localhost:7071/api/students
+        GetStudentById: [GET] http://localhost:7071/api/students/{id}
 
-UpdateStudent: [PUT] http://localhost:7071/api/students/{id}
+        GetStudents: [GET] http://localhost:7071/api/students
+
+        UpdateStudent: [PUT] http://localhost:7071/api/students/{id}
